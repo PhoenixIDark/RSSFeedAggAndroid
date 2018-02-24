@@ -31,12 +31,11 @@ public class MainActivity extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
 
-
-        /*
-        SubMenu subMenu = menu.addSubMenu("sub menu");
-        subMenu.add("item 1");
-        subMenu.add("item 2");
-        subMenu.add("item 3");*/
+        SubMenu subMenu = navigationView.getMenu().findItem(R.id.navl_all).getSubMenu();
+        subMenu.add("All");
+        subMenu.add("Item 1");
+        subMenu.add("Item 2");
+        subMenu.add("Item 3");
 
         navigationView.setNavigationItemSelectedListener(this);
 
@@ -93,7 +92,7 @@ public class MainActivity extends AppCompatActivity
         } else if (id == R.id.navl_settings) {
 
         } else if (id == R.id.navl_log) {
-
+            Toast.makeText(MainActivity.this, "Login", Toast.LENGTH_SHORT).show();
         }
 
         Toast.makeText(MainActivity.this, "Handle from navigation left", Toast.LENGTH_SHORT).show();
@@ -142,7 +141,7 @@ public class MainActivity extends AppCompatActivity
                 } else if (id == R.id.navr_beauty) {
 
                 } else if (id == R.id.navr_log) {
-
+                    Toast.makeText(MainActivity.this, "Logout", Toast.LENGTH_SHORT).show();
                 }
                 Toast.makeText(MainActivity.this, "Handle from navigation right", Toast.LENGTH_SHORT).show();
                 DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);

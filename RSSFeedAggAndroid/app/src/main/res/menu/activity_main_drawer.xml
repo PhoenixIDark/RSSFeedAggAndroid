@@ -13,19 +13,12 @@
             android:title="@string/action_explore" />
     </group>
 
-    <item android:title="My Menu"
-        android:id="@+id/my_menu_item">
+    <item android:title="@string/personalFeeds"
+        android:id="@+id/navl_all">
         <!-- A empty SubMenu -->
         <menu></menu>
     </item>
 
-    <item android:title="@string/personalFeeds">
-        <menu>
-            <item
-                android:id="@+id/navl_all"
-                android:title="@string/action_all" />
-        </menu>
-    </item>
 
     <item
         android:id="@+id/navl_settings"
