@@ -5,6 +5,6 @@
         android:id="@+id/action_settings"
         android:orderInCategory="100"
         android:title="Search"
-        android:icon="@drawable/ic_menu_camera"
+        android:icon="@drawable/ic_menu_gallery"
         app:showAsAction="ifRoom" />
 </menu>

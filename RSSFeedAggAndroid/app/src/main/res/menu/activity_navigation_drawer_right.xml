@@ -3,33 +3,54 @@
 
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/nav_camera_right"
-            android:icon="@drawable/ic_menu_camera"
-            android:title="Import" />
+            android:id="@+id/navr_explore"
+            android:title="@string/action_explore" />
         <item
-            android:id="@+id/nav_gallery_right"
-            android:icon="@drawable/ic_menu_gallery"
-            android:title="Gallery" />
+            android:id="@+id/navr_tech"
+            android:title="@string/action_tech" />
         <item
-            android:id="@+id/nav_slideshow_right"
-            android:icon="@drawable/ic_menu_slideshow"
-            android:title="Slideshow" />
+            android:id="@+id/navr_gaming"
+            android:title="@string/action_gaming" />
         <item
-            android:id="@+id/nav_manage_right"
-            android:icon="@drawable/ic_menu_manage"
-            android:title="Tools" />
+            android:id="@+id/navr_film"
+            android:title="@string/action_film" />
+        <item
+            android:id="@+id/navr_cars"
+            android:title="@string/action_cars" />
+        <item
+            android:id="@+id/navr_motos"
+            android:title="@string/action_motos" />
+        <item
+            android:id="@+id/navr_anime"
+            android:title="@string/action_anime" />
+        <item
+            android:id="@+id/navr_mangas"
+            android:title="@string/action_mangas" />
+        <item
+            android:id="@+id/navr_business"
+            android:title="@string/action_business" />
+        <item
+            android:id="@+id/navr_news"
+            android:title="@string/action_news" />
+        <item
+            android:id="@+id/navr_finance"
+            android:title="@string/action_finance" />
+        <item
+            android:id="@+id/navr_education"
+            android:title="@string/action_education" />
+        <item
+            android:id="@+id/navr_culture"
+            android:title="@string/action_culture" />
+        <item
+            android:id="@+id/navr_beauty"
+            android:title="@string/action_beauty" />
     </group>
 
-    <item android:title="Communicate">
+    <item android:title="@string/account">
         <menu>
             <item
-                android:id="@+id/nav_share_right"
-                android:icon="@drawable/ic_menu_share"
-                android:title="Share" />
-            <item
-                android:id="@+id/nav_send_right"
-                android:icon="@drawable/ic_menu_send"
-                android:title="Stop" />
+                android:id="@+id/navr_log"
+                android:title="@string/action_logout" />
         </menu>
     </item>
 

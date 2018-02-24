@@ -30,11 +30,13 @@ public class MainActivity extends AppCompatActivity
         toggle.syncState();
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
-        Menu menu = navigationView.getMenu();
+
+
+        /*
         SubMenu subMenu = menu.addSubMenu("sub menu");
         subMenu.add("item 1");
         subMenu.add("item 2");
-        subMenu.add("item 3");
+        subMenu.add("item 3");*/
 
         navigationView.setNavigationItemSelectedListener(this);
 
@@ -80,17 +82,17 @@ public class MainActivity extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.nav_camera) {
+        if (id == R.id.navl_today) {
             // Handle the camera action
-        } else if (id == R.id.nav_gallery) {
+        } else if (id == R.id.navl_readLater) {
 
-        } else if (id == R.id.nav_slideshow) {
+        } else if (id == R.id.navl_explore) {
 
-        } else if (id == R.id.nav_manage) {
+        } else if (id == R.id.navl_all) {
 
-        } else if (id == R.id.nav_share) {
+        } else if (id == R.id.navl_settings) {
 
-        } else if (id == R.id.nav_send) {
+        } else if (id == R.id.navl_log) {
 
         }
 
@@ -111,20 +113,37 @@ public class MainActivity extends AppCompatActivity
                 // Handle navigation view item clicks here.
                 int id = item.getItemId();
 
-                if (id == R.id.nav_camera_right) {
-                    // Handle the camera action
-                } else if (id == R.id.nav_gallery_right) {
+                if (id == R.id.navr_explore) {
 
-                } else if (id == R.id.nav_slideshow_right) {
+                } else if (id == R.id.navr_tech) {
 
-                } else if (id == R.id.nav_manage_right) {
+                } else if (id == R.id.navr_gaming) {
 
-                } else if (id == R.id.nav_share_right) {
+                } else if (id == R.id.navr_film) {
 
-                } else if (id == R.id.nav_send_right) {
+                } else if (id == R.id.navr_cars) {
+
+                } else if (id == R.id.navr_motos) {
+
+                } else if (id == R.id.navr_anime) {
+
+                } else if (id == R.id.navr_mangas) {
+
+                } else if (id == R.id.navr_business) {
+
+                } else if (id == R.id.navr_news) {
+
+                } else if (id == R.id.navr_finance) {
+
+                } else if (id == R.id.navr_education) {
+
+                } else if (id == R.id.navr_culture) {
+
+                } else if (id == R.id.navr_beauty) {
+
+                } else if (id == R.id.navr_log) {
 
                 }
-
                 Toast.makeText(MainActivity.this, "Handle from navigation right", Toast.LENGTH_SHORT).show();
                 DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
                 drawer.closeDrawer(GravityCompat.END);
